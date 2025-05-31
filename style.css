@@ -44,7 +44,10 @@ body {
 .btn-download:hover {
   background: #16a085;
 }
-.site-nav { display:flex; }
+.site-nav {
+  width: 100%;
+  display: flex;
+}
 .site-nav .nav-item {
   color: var(--white);
   font-weight: 600;
