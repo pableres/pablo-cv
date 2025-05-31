@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>CV Interactivo – Pablo Vallejo</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="js.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <h1>PABLO VALLEJO</h1>
+    <p class="hero-sub">Investigador · Psicólogo · Emprendedor</p>
+  </header>
+
+  <main>
+    <div class="gallery">
+      <div class="card" data-key="datos">
+        <span class="card-icon">👤</span>
+        <h3>Datos personales</h3>
+      </div>
+      <div class="card" data-key="formacion">
+        <span class="card-icon">🎓</span>
+        <h3>Formación</h3>
+      </div>
+      <div class="card" data-key="competencias">
+        <span class="card-icon">🛠️</span>
+        <h3>Competencias</h3>
+      </div>
+      <div class="card" data-key="idiomas">
+        <span class="card-icon">🗣️</span>
+        <h3>Idiomas</h3>
+      </div>
+      <div class="card" data-key="investigacion">
+        <span class="card-icon">🔬</span>
+        <h3>Investigación</h3>
+      </div>
+    </div>
+  </main>
+
+  <div id="overlay" class="overlay hidden">
+    <div class="overlay-content">
+      <button class="close-btn">&times;</button>
+      <h2 id="overlay-title"></h2>
+      <div id="subcards" class="subcards"></div>
+    </div>
+  </div>
+</body>
+</html>
