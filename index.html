@@ -1,49 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>CV Interactivo – Pablo Vallejo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV – Pablo Vallejo</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="js.js"></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="hero">
-    <h1>PABLO VALLEJO</h1>
-    <p class="hero-sub">Investigador · Psicólogo · Emprendedor</p>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-left">
+      <img src="profile.jpg" alt="Foto Pablo Vallejo" class="profile-pic">
+      <div>
+        <h1>Pablo Vallejo</h1>
+        <p class="tagline">Investigador · Psicólogo · Emprendedor</p>
+      </div>
+    </div>
+    <a href="cv.pdf" class="btn-download">Descargar CV</a>
   </header>
 
-  <main>
-    <div class="gallery">
-      <div class="card" data-key="datos">
-        <span class="card-icon">👤</span>
-        <h3>Datos personales</h3>
-      </div>
-      <div class="card" data-key="formacion">
-        <span class="card-icon">🎓</span>
-        <h3>Formación</h3>
-      </div>
-      <div class="card" data-key="competencias">
-        <span class="card-icon">🛠️</span>
-        <h3>Competencias</h3>
-      </div>
-      <div class="card" data-key="idiomas">
-        <span class="card-icon">🗣️</span>
-        <h3>Idiomas</h3>
-      </div>
-      <div class="card" data-key="investigacion">
-        <span class="card-icon">🔬</span>
-        <h3>Investigación</h3>
-      </div>
-    </div>
-  </main>
+  <!-- NAV -->
+  <nav class="site-nav">
+    <a href="#datos" class="nav-item" style="background:#1abc9c;">Datos</a>
+    <a href="#formacion" class="nav-item" style="background:#3498db;">Formación</a>
+    <a href="#competencias" class="nav-item" style="background:#9b59b6;">Competencias</a>
+    <a href="#idiomas" class="nav-item" style="background:#e67e22;">Idiomas</a>
+    <a href="#investigacion" class="nav-item" style="background:#e74c3c;">Investigación</a>
+  </nav>
 
-  <div id="overlay" class="overlay hidden">
-    <div class="overlay-content">
-      <button class="close-btn">&times;</button>
-      <h2 id="overlay-title"></h2>
-      <div id="subcards" class="subcards"></div>
-    </div>
-  </div>
+  <!-- MAIN CONTENT -->
+  <main>
+    <section id="datos" class="content-panel">
+      <div class="panel-left">
+        <h2>Personal Info</h2>
+        <ul>
+          <li><strong>Nombre:</strong> Pablo Vallejo</li>
+          <li><strong>Email:</strong> p.vallejo@example.com</li>
+          <li><strong>Teléfono:</strong> +34 600 000 000</li>
+          <li><strong>Ubicación:</strong> Canyelles, Barcelona</li>
+        </ul>
+      </div>
+      <div class="panel-right">
+        <h2>Resumen</h2>
+        <p>Psicólogo e investigador con experiencia en estudios de conducta humana y desarrollo de soluciones basadas en datos. Fuerte orientación a resultados y comunicación B2B.</p>
+      </div>
+    </section>
+
+    <section id="formacion" class="panel-simple">
+      <h2>Formación</h2>
+      <ul>
+        <li>Doctorado en Psicología, Univ. XYZ (2018–2022)</li>
+        <li>Máster en Investigación, Univ. ABC (2016–2018)</li>
+        <li>Grado en Psicología, Univ. DEF (2012–2016)</li>
+      </ul>
+    </section>
+
+    <section id="competencias" class="panel-simple">
+      <h2>Competencias</h2>
+      <ul class="skills-list">
+        <li>Análisis estadístico</li>
+        <li>Desarrollo Shiny (R)</li>
+        <li>Gestión de proyectos</li>
+        <li>Negociación B2B</li>
+      </ul>
+    </section>
+
+    <section id="idiomas" class="panel-simple">
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Español: Nativo</li>
+        <li>Inglés: C1 (Avanzado)</li>
+        <li>Catalán: Fluido</li>
+      </ul>
+    </section>
+
+    <section id="investigacion" class="panel-simple">
+      <h2>Investigación</h2>
+      <ul>
+        <li>Estudio de conducta sexual, 2023</li>
+        <li>Publicación en Journal of Sex Research, 2024</li>
+        <li>Proyecto EU Horizon 2025 (en curso)</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
