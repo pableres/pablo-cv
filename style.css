@@ -33,14 +33,22 @@ main { max-width:900px; margin:2rem auto; }
 .skills-list li { background:#1abc9c; color:white; padding:0.5rem 1rem; border-radius:4px; }
 .nav-dropdown {
   position: relative;
+  flex: 1;
+  display: flex;
 }
 
-.dropdown-toggle {
-  color: var(--white);
-  font-weight: 600;
+.nav-dropdown .dropdown-toggle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
+  font-weight: 600;
+  font-size: 1rem; /* Igual que .nav-item */
+  color: var(--white);
+  text-decoration: none;
+  background: #e74c3c; /* Mismo fondo que el nav-item de investigación */
   border: none;
-  background: #e74c3c;
   cursor: pointer;
 }
 
@@ -49,12 +57,11 @@ main { max-width:900px; margin:2rem auto; }
   position: absolute;
   top: 100%;
   left: 0;
+  width: 100%;
   background: var(--white);
   box-shadow: 0 2px 8px var(--shadow);
   z-index: 999;
   border-radius: 0 0 6px 6px;
-  min-width: 180px;
-  overflow: hidden;
 }
 
 .dropdown-menu a {
