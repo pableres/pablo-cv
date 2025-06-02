@@ -1,3 +1,8 @@
+:root {
+  --white: #ffffff;
+  --accent: #1abc9c; /* O el color que prefieras */
+}
+
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
   font-family: 'Poppins', sans-serif;
@@ -19,9 +24,20 @@ body {
 .btn-download:hover {
   background: #16a085;
 }
-.site-nav { display:flex; }
+* {
+  transition: all 0.2s ease;
+}
+.site-nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 .site-nav .nav-item { flex:1; text-align:center; padding:1rem 0; color:white; text-decoration:none; font-weight:bold; transition:opacity .3s; }
-.site-nav .nav-item:hover { opacity:0.8; }
+.site-nav .nav-item:hover {
+  opacity: 0.9;
+  filter: brightness(1.1);
+}
 main { max-width:900px; margin:2rem auto; }
 .content-panel { display:flex; gap:2rem; background:white; padding:1.5rem; border-radius:6px; margin-bottom:2rem; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
 .panel-left, .panel-right { flex:1; }
