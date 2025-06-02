@@ -91,3 +91,81 @@ main { max-width:900px; margin:2rem auto; }
   border-bottom: none;
 }
 
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .site-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .tagline {
+    font-size: 0.85rem;
+  }
+
+  .btn-download {
+    align-self: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-nav {
+    flex-direction: column;
+  }
+
+  .site-nav .nav-item,
+  .nav-dropdown .dropdown-toggle {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .nav-dropdown {
+    flex-direction: column;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+
+  .dropdown-menu a {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .content-panel {
+    flex-direction: column;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 0 1rem;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
