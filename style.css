@@ -107,6 +107,21 @@ main { max-width:900px; margin:2rem auto; }
   border-bottom: none;
 }
 
+.btn-lang-switch {
+  display: inline-block;
+  background-color: #9a8c98; /* mismo color que tu botón "Datos" */
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-lang-switch:hover {
+  background-color: #7f747d;
+}
+
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
