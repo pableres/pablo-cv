@@ -70,6 +70,22 @@ main { max-width:900px; margin:2rem auto; }
   white-space: nowrap;
 }
 
+.skill-block {
+  background-color: #f5fdfc; /* Fondo suave verde-azulado */
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.skill-block h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #222;
+  font-weight: 600;
+}
+
 
 .nav-dropdown .dropdown-toggle {
   flex: 1;
