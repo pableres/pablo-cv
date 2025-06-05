@@ -187,18 +187,21 @@ main { max-width:900px; margin:2rem auto; }
 
 .info-container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.panel-left {
+  max-width: 500px;
 }
 
 .profile-photo-hover {
   position: relative;
   width: 240px;
-  max-width: 100%;
   aspect-ratio: 3/4;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -227,6 +230,7 @@ main { max-width:900px; margin:2rem auto; }
 .profile-photo-hover:hover img.hovered {
   opacity: 1;
 }
+
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
