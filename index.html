@@ -18,6 +18,8 @@
 <meta name="twitter:title" content="Pablo Vallejo – Doctor en psicólogía, investigador y emprendedor" />
 <meta name="twitter:description" content="Conoce mi trabajo en salud sexual, innovación y desarrollo de productos científicos y tecnológicos." />
 <meta name="twitter:image" content="https://pablovallejo.es/profile.jpg" />
+<meta name="description" content="CV of Pablo Vallejo Medina – PhD in Psychology. Explore his work in sexual health, innovation, scientific research, and product development.">
+
 
   
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -27,6 +29,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
+<script>
+  // Redirige automáticamente al idioma correcto si es la primera visita
+  if (!localStorage.getItem("languageRedirected")) {
+    const userLang = navigator.language || navigator.userLanguage;
+    const path = window.location.pathname;
+
+    if (userLang.startsWith("es") && !path.includes("index.html")) {
+      window.location.href = "/index.html";
+    } else if (userLang.startsWith("en") && !path.includes("index-en.html")) {
+      window.location.href = "/index-en.html";
+    }
+    localStorage.setItem("languageRedirected", "true");
+  }
+</script>
+
+  
 </head>
 <body>
   <!-- HEADER -->
