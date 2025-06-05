@@ -45,6 +45,9 @@ main { max-width:900px; margin:2rem auto; }
 .panel-left ul, .panel-simple ul { list-style:none; }
 .panel-left li { margin-bottom:0.5rem; }
 .panel-simple { background:white; padding:1.5rem; border-radius:6px; margin-bottom:2rem; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+.panel-right p {
+  text-align: justify;
+}
 .skill-category {
   border: 1px solid #ddd;
   border-radius: 12px;
