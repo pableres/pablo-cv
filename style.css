@@ -45,21 +45,31 @@ main { max-width:900px; margin:2rem auto; }
 .panel-left ul, .panel-simple ul { list-style:none; }
 .panel-left li { margin-bottom:0.5rem; }
 .panel-simple { background:white; padding:1.5rem; border-radius:6px; margin-bottom:2rem; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+.skill-category {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #f9f9f9;
+}
+.skill-category h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 .skills-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem 1rem;
-  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
 }
 .skills-list li {
-  list-style: none;
-  background-color: #20c997;
+  background: #00bfa6;
   color: white;
-  padding: 0.5rem 0.75rem;
-  border-radius: 6px;
-  font-size: 0.95em;
-  text-align: left;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  white-space: nowrap;
 }
+
 
 .nav-dropdown .dropdown-toggle {
   flex: 1;
