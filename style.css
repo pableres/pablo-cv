@@ -199,41 +199,36 @@ main { max-width:900px; margin:2rem auto; }
 
 .profile-photo-hover {
   position: relative;
-  max-width: 240px;
-  width: 100%;
+  width: 220px;
   height: auto;
-  border-radius: 12px;
-  overflow: hidden;
+  aspect-ratio: 3 / 4; /* Mantiene proporción vertical */
+  margin: 0 auto 2rem;
 }
 
 .profile-photo-hover img {
-  width: 100%;
-  height: auto;
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 0.5s ease;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  aspect-ratio: 3 / 4;
+  border-radius: 12px;
+  transition: opacity 0.4s ease-in-out;
 }
 
-.profile-photo-hover img.default {
-  opacity: 1;
-  z-index: 1;
-}
-
-.profile-photo-hover img.hovered {
+.profile-photo-hover .hovered {
   opacity: 0;
   z-index: 2;
 }
 
-.profile-photo-hover:hover img.default {
+.profile-photo-hover:hover .hovered {
+  opacity: 1;
+}
+
+.profile-photo-hover:hover .default {
   opacity: 0;
 }
 
-.profile-photo-hover:hover img.hovered {
-  opacity: 1;
-}
 
 
 /* --- RESPONSIVE --- */
