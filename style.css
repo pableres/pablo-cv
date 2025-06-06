@@ -146,6 +146,10 @@ main { max-width:900px; margin:2rem auto; }
   border-bottom: none;
 }
 
+.nav-dropdown {
+  position: relative;
+}
+
 .btn-lang-switch {
   display: inline-block;
   background-color: #9a8c98; /* mismo color que tu botón "Datos" */
