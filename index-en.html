@@ -19,22 +19,62 @@
   <meta name="twitter:description" content="Explore my work in sexual health, innovation, and development of scientific and technological products." />
   <meta name="twitter:image" content="https://pablovallejo.es/profile.jpg" />
 
+  <meta name="description" content="Pablo Vallejo-Medina, PhD in Psychology (University of Granada) and sexual health researcher with 60+ scientific publications. Explore his work in sexology, innovation, and intimate product development.">
+  <link rel="canonical" href="https://pablovallejo.es/index-en.html">
+
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV – Pablo Vallejo-Medina</title>
+  <title>Pablo Vallejo-Medina | PhD in Psychology &amp; Sexology – Researcher</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <script defer src="js.js"></script>
+
+  <!-- Structured data: Person (E-E-A-T + knowledge panel) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pablo Vallejo-Medina",
+    "url": "https://pablovallejo.es/",
+    "image": "https://pablovallejo.es/profile.jpg",
+    "jobTitle": "PhD in Psychology and sexual health researcher",
+    "description": "PhD in Psychology (University of Granada) and sexual health researcher with 60+ indexed scientific publications.",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Granada" },
+      { "@type": "CollegeOrUniversity", "name": "Miguel Hernández University" }
+    ],
+    "knowsAbout": ["Sexology", "Sexual health", "Psychology", "Clinical research", "Sex education", "Sexual health innovation"],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=gGxrWa4AAAAJ",
+      "https://www.youtube.com/@PabloVallejoMedina",
+      "https://www.researchgate.net/profile/Pablo-Vallejo-Medina-2",
+      "https://orcid.org/0000-0002-8527-1584",
+      "https://www.linkedin.com/in/pablo-vallejo-medina/"
+    ]
+  }
+  </script>
+
+  <script>
+  // Redirige automáticamente al idioma correcto si es la primera visita
+  if (!localStorage.getItem("languageRedirected")) {
+    const userLang = navigator.language || navigator.userLanguage;
+    const path = window.location.pathname;
+
+    if (userLang.startsWith("es") && !path.includes("index.html")) {
+      window.location.href = "/index.html";
+    } else if (userLang.startsWith("en") && !path.includes("index-en.html")) {
+      window.location.href = "/index-en.html";
+    }
+    localStorage.setItem("languageRedirected", "true");
+  }
+  </script>
 </head>
 <body>
   <!-- HEADER -->
   <header class="site-header">
-
-        <h1>Pablo Vallejo</h1>
-        <p class="tagline">Researcher · PhD in Psychology · Entrepreneur</p>
-      </div>
-    </div>
+    <h1>Pablo Vallejo</h1>
+    <p class="tagline">Researcher · PhD in Psychology · Entrepreneur</p>
     <a href="cvn_2025.pdf" class="btn-download">Download CV</a>
      <a href="index.html" class="btn-lang-switch">Español</a>
   </header>
@@ -80,9 +120,7 @@
       <div class="panel-right">
         <h2 style="font-size: 1.8em; margin-bottom: 1.5rem;">Professional Summary</h2>
         <p>PhD in Psychology and researcher with over 15 years of experience leading projects in sexual health, with a strong focus on innovation, technology, and wellbeing. I earned my PhD from the University of Granada and have directed multiple clinical studies, contributed to public policy, and advised top brands like Durex, UNIQ, and Sen Íntimo in the design, validation, and improvement of intimate products.</p>
-        <p>
         <p>I have authored more than 60 scientific articles published in top-tier journals such as <em>Journal of Sexual Medicine</em>, <em>Archives of Sexual Behavior</em>, <em>Journal of Sex Research</em>, and <em>Journal of Sexual and Marital Therapy</em>. I founded and directed the first human sexuality lab in Latin America (SexLab KL) and served as editor-in-chief of a scientific journal for nine years. My work bridges academia and real-world impact, supporting consumers, companies, and healthcare professionals alike.</p>
-        <p>
         <p>My approach blends scientific evidence, design thinking, and product vision, aiming for tangible results, social impact, and competitive brand positioning.</p>
       </div>
     </section>
@@ -177,6 +215,12 @@
     <li style="margin-bottom: 1.5rem;">
       <strong>Co-creation of science-based content and campaigns</strong><br>
       <span style="color: #555;">Rigorous dissemination through media, platforms, and networks on healthy sexuality</span>
+    </li>
+    <li style="margin-bottom: 1.5rem;">
+      <strong>NoctLab Games — erotic games grounded in sexology</strong><br>
+      <span style="color: #555;">Founder and scientific director of
+        <a href="https://noctlabgames.com/" style="color: #0077cc; text-decoration: none;">NoctLab</a>,
+        intimate games for couples that translate sexological evidence into playful experiences</span>
     </li>
   </ul>
 </section>   
